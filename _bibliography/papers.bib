@@ -1,115 +1,267 @@
----
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@inproceedings{
+saeed2023a,
+title={A {DB}-First approach to query factual information in {LLM}s},
+author={Mohammed Saeed and Nicola De Cao and Paolo Papotti},
+booktitle={NeurIPS 2023 Second Table Representation Learning Workshop},
+year={2023},
+url={https://openreview.net/forum?id=R8VFPAfOcN},
+pdf = {https://openreview.net/forum?id=R8VFPAfOcN},
+abstract = {In many use-cases, information is stored in text but not available in structured data. However, extracting data from natural language (NL) text to precisely fit a schema, and thus enable querying, is a challenging task. With the rise of pre-trained Large Language Models (LLMs), there is now an effective solution to store and use information extracted from massive corpora of text documents. Thus, we envision the use of SQL queries to cover a broad range of data that is not captured by traditional databases (DBs) by tapping the information in LLMs. This ability enables querying the factual information in LLMs with the SQL interface, which is more precise than NL prompts. We present a traditional DB architecture using physical operators for querying the underlying LLM. The key idea is to execute some operators of the query plan with prompts that retrieve data from the LLM. For a large class of SQL queries, querying LLMs returns well structured relations, with encouraging qualitative results.},
+code={https://gitlab.eurecom.fr/saeedm1/galois},
+abbr={NeurIPS},
+bibtex_show={true}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@inproceedings{10.1145/3543873.3587340,
+author = {Righes, Luca and Saeed, Mohammed and Demartini, Gianluca and Papotti, Paolo},
+title = {The Community Notes Observatory: Can Crowdsourced Fact-Checking be Trusted in Practice?},
+year = {2023},
+isbn = {9781450394192},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3543873.3587340},
+doi = {10.1145/3543873.3587340},
+abstract = {Fact-checking is an important tool in fighting online misinformation. However, it requires expert human resources, and thus does not scale well on social media because of the flow of new content. Crowdsourcing has been proposed to tackle this challenge, as it can scale with a smaller cost, but it has always been studied in controlled environments. In this demo, we present the Community Notes Observatory, an online system to evaluate the first large-scale effort of crowdsourced fact-checking deployed in practice. We let demo attendees search and analyze tweets that are fact-checked by Community Notes users and compare the crowd’s activity against professional fact-checkers. The attendees will explore evidence of i) differences in how the crowd and experts select content to be checked, ii) how the crowd and the experts retrieve different resources to fact-check, and iii) the edge the crowd shows in fact-checking scalability and efficiency as compared to expert checkers.},
+booktitle = {Companion Proceedings of the ACM Web Conference 2023},
+pages = {172–175},
+numpages = {4},
+keywords = {crowdsourcing, fact-checking, information quality, misinformation},
+location = {<conf-loc>, <city>Austin</city>, <state>TX</state>, <country>USA</country>, </conf-loc>},
+series = {WWW '23 Companion},
+abbr={WWW},
+pdf = {https://dl.acm.org/doi/10.1145/3543873.3587340},
+abstract = {Fact-checking is an important tool in fighting online misinformation. However, it requires expert human resources, and thus does not scale well on social media because of the flow of new content. Crowdsourcing has been proposed to tackle this challenge, as it can scale with a smaller cost, but it has always been studied in controlled environments. In this demo, we present the Community Notes Observatory, an online system to evaluate the first large-scale effort of crowdsourced fact-checking deployed in practice. We let demo attendees search and analyze tweets that are fact-checked by Community Notes users and compare the crowd’s activity against professional fact-checkers. The attendees will explore evidence of i) differences in how the crowd and experts select content to be checked, ii) how the crowd and the experts retrieve different resources to fact-check, and iii) the edge the crowd shows in fact-checking scalability and efficiency as compared to expert checkers.},
+bibtex_show={true}
+
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{10.1162/tacl_a_00544,
+    author = {Badaro, Gilbert and Saeed, Mohammed and Papotti, Paolo},
+    title = "{Transformers for Tabular Data Representation: A Survey of Models and Applications}",
+    journal = {Transactions of the Association for Computational Linguistics},
+    volume = {11},
+    pages = {227-249},
+    year = {2023},
+    month = {03},
+    abbr={TACL},
+    abstract = "{In the last few years, the natural language processing community has witnessed advances in neural representations of free texts with transformer-based language models (LMs). Given the importance of knowledge available in tabular data, recent research efforts extend LMs by developing neural representations for structured data. In this article, we present a survey that analyzes these efforts. We first abstract the different systems according to a traditional machine learning pipeline in terms of training data, input representation, model training, and supported downstream tasks. For each aspect, we characterize and compare the proposed solutions. Finally, we discuss future work directions.}",
+    issn = {2307-387X},
+    doi = {10.1162/tacl_a_00544},
+    publisher = {Association for Computational Linguistics},
+    pdf = {https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00544/115239/Transformers-for-Tabular-Data-Representation-A},
+    url = {https://doi.org/10.1162/tacl\_a\_00544},
+    eprint = {https://direct.mit.edu/tacl/article-pdf/doi/10.1162/tacl\_a\_00544/2074873/tacl\_a\_00544.pdf},
+    bibtex_show={true}
+
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@phdthesis{EURECOM+7052,
+  author = {Saeed, Mohammed},
+  title = {Employing transformers and humans for textual-claim verification},
+  year = {2022},
+  abbr={Thesis},
+  pdf = {https://theses.hal.science/tel-03922010/document},
+  bibtex_show={true}
+}
+
+@inproceedings{saeed-etal-2022-TE,
+    title = {You Are My Type! Type Embeddings for Pre-trained Language Models},
+    author = {Saeed, Mohammed  and
+      Papotti, Paolo},
+    booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing},
+    month = {dec},
+    year = {2022},
+    address = {Online and Abu Dhabi, UAE},
+    publisher = {Association for Computational Linguistics},
+    pdf = {https://www.eurecom.fr/en/publication/7095},
+    abstract = {One reason for the positive impact of Pre-trained Language Models (PLMs) in NLP tasks is their ability to encode semantic types, such as `European City' or `Woman'. While previous work has analyzed such information in the context of interpretability, it is not clear how to use types to steer the PLM output. For example, in a cloze statement, it is desirable to steer the model to generate a token that satisfies a user-specified type, e.g., predict a "date" rather than a "location". In this work, we introduce Type Embeddings (TEs), an input embedding that promotes desired types in a PLM. Our proposal is to define a type by a small set of word examples. We empirically study the ability of TEs both in representing types and in steering masking predictions without changes to the prompt text in BERT. Finally, using the LAMA datasets, we show how TEs highly improve the precision in extracting facts from PLMs.},
+    code = {https://github.com/MhmdSaiid/TypeEmbedding},
+    abbr={EMNLP},
+    selected={true},
+    bibtex_show={true}
+}
+
+@inproceedings{saeed-etal-2022-birdwatch,
+    title = "Crowdsourced Fact-Checking at Twitter: How Does the Crowd Compare With Experts?",
+    author = "Saeed, Mohammed  and
+      Traub, Nicolas  and
+      Nicola, Maelle  and
+      Demartini, Gianluca  and
+      Papotti, Paolo",
+    booktitle = "31st ACM International Conference on Information and Knowledge Management",
+    month = oct,
+    year = "2022",
+    address = "Online and Atlanta, Georgia, USA",
+    url = "https://arxiv.org/abs/2208.09214",
+    bibtex_show={true},
+    pdf={https://arxiv.org/abs/2208.09214},
+    code={https://github.com/MhmdSaiid/BirdWatch},
+    abbr={CIKM},
+    bibtex_show={true},
+    abstract="Fact-checking is one of the effective solutions in fighting online misinformation. However, traditional fact-checking is a process requiring scarce expert human resources, and thus does not scale well on social media because of the continuous flow of new content to be checked. Methods based on crowdsourcing have been proposed to tackle this challenge, as they can scale with a smaller cost, but, while they have shown to be feasible, have always been studied in controlled environments. In this work, we study the first large-scale effort of crowdsourced fact-checking deployed in practice, started by Twitter with the Birdwatch program. Our analysis shows that crowdsourcing may be an effective fact-checking strategy in some settings, even comparable to results obtained by human experts, but does not lead to consistent, actionable results in others. We processed 11.9k tweets verified by the Birdwatch program and report empirical evidence of i) differences in how the crowd and experts select content to be fact-checked, ii) how the crowd and the experts retrieve different resources to fact-check, and iii) the edge the crowd shows in fact-checking scalability and efficiency as compared to expert checkers."
+}
+
+@inproceedings{pythiaDemo,
+author = {Veltri, Enzo and Santoro, Donatello and Badaro, Gilbert and Saeed, Mohammed and Papotti, Paolo},
+title = {{P}ythia: {U}nsupervised {G}eneration of {A}mbiguous {T}extual {C}laims from {R}elational {D}ata},
+year = {2022},
+isbn = {9781450392495},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3514221.3520164},
+doi = {10.1145/3514221.3520164},
+abstract = {Applications such as computational fact checking and data-to-text generation exploit the relationship between relational data and natural language text. Despite promising results in these areas, state of the art solutions simply fail in managing "data-ambiguity", i.e., the case when there are multiple interpretations of the relationship between the textual sentence and the relational data. To tackle this problem, we introduce Pythia, a system that, given a relational table D, generates textual sentences that contain factual ambiguities w.r.t. the data in D. Such sentences can then be used to train target applications in handling data-ambiguity. In this demonstration, we first show how our system generates data ambiguous sentences for a given table in an unsupervised fashion by data profiling and query generation. We then demonstrate how two existing applications benefit from Pythia's generated sentences, improving the state-of-the-art results. The audience will interact with Pythia by changing input parameters in an interactive fashion, including the upload of their own dataset to see what data ambiguous sentences are generated for it.},
+booktitle = {Proceedings of the 2022 International Conference on Management of Data},
+pages = {2409–2412},
+numpages = {4},
+keywords = {unsupervised text generation, data ambiguity, fact checking, data to text generation},
+location = {Philadelphia, PA, USA},
+series = {SIGMOD '22},
+bibtex_show={true},
+pdf={https://www.eurecom.fr/publication/6838/download/data-publi-6838.pdf},
+code={https://github.com/enzoveltri/pythia},
+abbr={SIGMOD},
+bibtex_show={true}
+
+}
+
+
+@inproceedings{saeed-etal-2021-rulebert,
+    title = {{R}ule{BERT}: Teaching Soft Rules to Pre-Trained Language Models},
+    author = {Saeed, Mohammed  and
+      Ahmadi, Naser  and
+      Nakov, Preslav  and
+      Papotti, Paolo},
+    booktitle = {Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing},
+    month = {nov},
+    year = {2021},
+    address = {Online and Punta Cana, Dominican Republic},
+    publisher = {Association for Computational Linguistics},
+    pdf = {https://aclanthology.org/2021.emnlp-main.110},
+    doi = {10.18653/v1/2021.emnlp-main.110},
+    pages = {1460--1476},
+    abstract = {While pre-trained language models (PLMs) are the go-to solution to tackle many natural language processing problems, they are still very limited in their ability to capture and to use common-sense knowledge. In fact, even if information is available in the form of approximate (soft) logical rules, it is not clear how to transfer it to a PLM in order to improve its performance for deductive reasoning tasks. Here, we aim to bridge this gap by teaching PLMs how to reason with soft Horn rules. We introduce a classification task where, given facts and soft rules, the PLM should return a prediction with a probability for a given hypothesis. We release the first dataset for this task, and we propose a revised loss function that enables the PLM to learn how to predict precise probabilities for the task. Our evaluation results show that the resulting fine-tuned models achieve very high performance, even on logical rules that were unseen at training. Moreover, we demonstrate that logical notions expressed by the rules are transferred to the fine-tuned model, yielding state-of-the-art results on external datasets.},
+    code = {https://github.com/MhmdSaiid/RuleBert},
+    abbr={EMNLP},
+    selected={true},
+    bibtex_show={true}
+}
+
+@article{10.14778/3407790.3407841,
+author = {Karagiannis*, Georgios and Saeed*, Mohammed and Papotti, Paolo and Trummer, Immanuel},
+title = {Scrutinizer: A Mixed-Initiative Approach to Large-Scale, Data-Driven Claim Verification},
+year = {2020},
+issue_date = {August 2020},
+publisher = {VLDB Endowment},
+volume = {13},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3407790.3407841},
+doi = {10.14778/3407790.3407841},
+abstract = {Organizations spend significant amounts of time and money to manually fact check text documents summarizing data. The goal of the Scrutinizer system is to reduce verification overheads by supporting human fact checkers in translating text claims into SQL queries on an database. Scrutinizer coordinates teams of human fact checkers. It reduces verification time by proposing queries or query fragments to the users. Those proposals are based on claim text classifiers, that gradually improve during the verification of a large document. In addition, Scrutinizer uses tentative execution of query candidates to narrow down the set of alternatives. The verification process is controlled by a cost-based optimizer. It optimizes the interaction with users and prioritizes claim verifications. For the latter, it considers expected verification overheads as well as the expected claim utility as training samples for the classifiers. We evaluate the Scrutinizer system using simulations and a user study with professional fact checkers, based on actual claims and data. Our experiments consistently demonstrate significant savings in verification time, without reducing result accuracy.},
+journal = {Proc. VLDB Endow.},
+month = {jul},
+pages = {2508–2521},
+numpages = {14},
+abbr={VLDB},
+selected={true},
+code={https://github.com/geokaragiannis/statchecker},
+bibtex_show={true},
+pdf = {http://www.vldb.org/pvldb/vol13/p2508-karagiannis.pdf}
+
+}
+
+@article{Ahmadi2019ExplainableFC,
+  title={Explainable Fact Checking with Probabilistic Answer Set Programming},
+  author={Naser Ahmadi and Joohyung Lee and Paolo Papotti and Mohammed Saeed*},
+  journal={Truth and Trust Online},
+  abbr={TTO},
+  year={2019},
+  volume={abs/1906.09198},
   selected={true},
-  inspirehep_id = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+  code={https://github.com/ppapotti/expclaim},
+  abstract={One challenge in fact checking is the ability to improve the transparency of the decision. We present a fact checking method that uses reference information in knowledge graphs (KGs) to assess claims and explain its decisions. KGs contain a formal representation of knowledge with semantic descriptions of entities and their relationships. We exploit such rich semantics to produce interpretable explanations for the fact checking output. As information in a KG is inevitably incomplete, we rely on logical rule discovery and on Web text mining to gather the evidence to assess a given claim. Uncertain rules and facts are turned into logical programs and the checking task is modeled as an inference problem in a probabilistic extension of answer set programs. Experiments show that the probabilistic inference enables the efficient labeling of claims with interpretable explanations, and the quality of the results is higher than state of the art baselines.},
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+  pdf={https://arxiv.org/abs/1906.09198}
+
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{10.14778/3415478.3415520,
+author = {Karagiannis*, Georgios and Saeed*, Mohammed and Papotti, Paolo and Trummer, Immanuel},
+title = {Scrutinizer: Fact Checking Statistical Claims},
+year = {2020},
+issue_date = {August 2020},
+publisher = {VLDB Endowment},
+volume = {13},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3415478.3415520},
+doi = {10.14778/3415478.3415520},
+abstract = {We demonstrate Scrutinizer, a system that supports human fact checkers in translating text claims into SQL queries on an associated database. Scrutinizer coordinates teams of human fact checkers and reduces their verification time by proposing queries or query fragments over relevant data. Those proposals are based on claim text classifiers, that gradually improve during the verification of multiple claims. In addition, Scrutinizer uses tentative execution of query candidates to narrow down the set of alternatives. The verification process is controlled by a cost-based optimizer that plans effective question sequences to verify specific claims, and prioritizes claims for verification. In this demonstration, we first show how our system can assist users in verifying statistical claims. We then let users come up with new, unseen claims and show how the system effectively learns new queries with little user feedback.},
+journal = {Proc. VLDB Endow.},
+month = {aug},
+pages = {2965–2968},
+numpages = {4},
+pdf={https://doi.org/10.14778/3415478.3415520},
+bibtex_show={true},
+abbr={VLDB}
 }
+
+@misc{IEEEDE,
+  author = {Saeed, Mohammed and  Papotti, Paolo},
+  title = {Fact-checking statistical claims with tables},
+  howpublished = {IEEE Data Engineering Bulletin, August 2021},
+  journal={IEEE Data Engineering Bulletin},
+  year = {2021},
+  abbr={IEEE},
+  note = {© 2021 IEEE. Personal use of this material is permitted. However, permission to reprint/republish this material for advertising or promotional purposes or for creating new collective works for resale or redistribution to servers or lists, or to reuse any copyrighted component of this work in other works must be obtained from the IEEE.},
+  pdf={https://doi.org/10.14778/3415478.3415520},
+  bibtex_show={true},
+  abstract={The surge of misinformation poses a serious problem for fact-checkers. Several initiatives for manual fact-checking have stepped up to combat this ordeal. However, computational methods are needed to make the verification faster and keep up with the increasing abundance of false information. Machine Learning (ML) approaches have been proposed as a tool to ease the work of manual fact-checking. Specifically, the act of checking textual claims by using relational datasets has recently gained a lot of traction. However, despite the abundance of proposed solutions, there has not been any formal definition of the problem, nor a comparison across the different assumptions and results. In this work, we make a first attempt at solving these ambiguities. First, we formalize the problem by providing a general definition that is applicable to all systems and that is agnostic to their assumptions. Second, we define general dimensions to characterize different prominent systems in terms of assumptions and features. Finally, we report experimental results over three scenarios with corpora of real-world textual claims.},
+  pdf={http://sites.computer.org/debull/A21sept/p27.pdf}
+}
+
+@inproceedings{saeed-etal-2021-neural,
+    title = "Neural Re-rankers for Evidence Retrieval in the {FEVEROUS} Task",
+    author = "Saeed, Mohammed  and
+      Alfarano, Giulio  and
+      Nguyen, Khai  and
+      Pham, Duc  and
+      Troncy, Raphael  and
+      Papotti, Paolo",
+    booktitle = "Proceedings of the Fourth Workshop on Fact Extraction and VERification (FEVER)",
+    month = nov,
+    year = "2021",
+    address = "Dominican Republic",
+    abbr={FEVEROUS},
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.fever-1.12",
+    doi = "10.18653/v1/2021.fever-1.12",
+    pages = "108--112",
+    bibtex_show={true},
+    code={https://gitlab.eurecom.fr/saeedm1/eurecom-fever},
+    pdf={https://aclanthology.org/2021.fever-1.12/},
+    abstract = "Computational fact-checking has gained a lot of traction in the machine learning and natural language processing communities. A plethora of solutions have been developed, but methods which leverage both structured and unstructured information to detect misinformation are of particular relevance. In this paper, we tackle the FEVEROUS (Fact Extraction and VERification Over Unstructured and Structured information) challenge which consists of an open source baseline system together with a benchmark dataset containing 87,026 verified claims. We extend this baseline model by improving the evidence retrieval module yielding the best evidence F1 score among the competitors in the challenge leaderboard while obtaining an overall FEVEROUS score of 0.20 (5th best ranked system).",
+}
+
+
+@inproceedings{rezgui-etal-2021-automatic,
+    title = "Automatic Verification of Data Summaries",
+    author = "Rezgui, Rayhane  and
+      Saeed, Mohammed  and
+      Papotti, Paolo",
+    booktitle = "Proceedings of the 14th International Conference on Natural Language Generation",
+    month = aug,
+    year = "2021",
+    address = "Aberdeen, Scotland, UK",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.inlg-1.27",
+    pages = "271--275",
+    abbr={INLG},
+    abstract = "We present a generic method to compute thefactual accuracy of a generated data summarywith minimal user effort. We look at the prob-lem as a fact-checking task to verify the nu-merical claims in the text. The verification al-gorithm assumes that the data used to generatethe text is available. In this paper, we describehow the proposed solution has been used toidentify incorrect claims about basketball tex-tual summaries in the context of the AccuracyShared Task at INLG 2021.",
+    pdf={https://aclanthology.org/2021.inlg-1.27/},
+    bibtex_show={true}
+}
+
+
+
